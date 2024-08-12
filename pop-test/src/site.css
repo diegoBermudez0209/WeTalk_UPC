@@ -171,7 +171,13 @@ a{
     line-height: 16px;
     min-height: 40px;
     margin-top: 8px;
+    transition: 0.3s ease; 
 }
+
+.section .container .information .button:hover {
+    transform: scale(1.1); 
+}
+
 
 /** Media Query **/
 @media (min-width: 768px) {
@@ -199,5 +205,7 @@ a{
         max-height: 35px;
 
     }
+
+    
 
 }
