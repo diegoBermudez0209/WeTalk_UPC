@@ -500,8 +500,9 @@ a{
     /** Section1 **/
     .section1 {
         background-image: url(../images/Bgsky.png);
-        max-height: 645px;
-        min-height: 645px;
+        min-height: 100vh; 
+        height: 100%; 
+        width: 100%;
         background-size: 100% 100%;
     }
 
