@@ -88,8 +88,8 @@ const preguntas = [
     questionImage: false,
     opciones: [
       { textoRespuesta: "Solari", isCorrect: false },
-      { textoRespuesta: "Thiago", isCorrect: true },
-      { textoRespuesta: "Andrés", isCorrect: false },
+      { textoRespuesta: "Thiago", isCorrect: false },
+      { textoRespuesta: "Andrés", isCorrect: true },
       { textoRespuesta: "Mateo", isCorrect: false },
     ]
   },

@@ -16,11 +16,11 @@
         const [selectedOption, setSelectedOption] = useState(null);
 
         // Estado para la puntuación
-        const [score, setScore] = useState(0);
+        const [score, setScore] = useState(1);
 
 
 
-        const imageSrc = characters[currentQuestion].image ; // Imágen por defecto si currentQuestion excede el índice del array
+        const imageSrc = characters[currentQuestion].image ; 
 
 
 
@@ -28,6 +28,7 @@
         const handleOptionSelect = (option) => {
             setSelectedOption(option);
         };
+        
         // Cambiando de pregunta
         const handleAnswerSubmit = () => {
             const isOptionSelected = selectedOption !== null;
@@ -37,6 +38,7 @@
             // Actualizar el puntaje total
             const puntajeFinal = isCorrectAnswer ? score + 1 : score;
             setScore(puntajeFinal);
+            console.log(score);
 
             // Reiniciar la opción seleccionada
             setSelectedOption(null);

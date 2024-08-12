@@ -1,0 +1,201 @@
+
+
+.section {
+    min-height: 352px;
+}
+
+.section .containerF {
+    min-height: 352px;
+    background-color: var(--white);
+    padding: 30px;
+    width: 90%;
+    min-width: 335px;
+    max-width: 500px;
+}
+
+.section .containerF .information .titlef {
+    color: var(--gray);
+    text-transform: uppercase;
+    font-family: "Solano Gothi";
+    min-width: 116px;
+    min-height: 19px;
+    width: 100%;
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.section .containerF .information .subtitle {
+    min-width: 273px;
+    min-height: 48px;
+    font-family: "Zizou Slab";
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+.section .containerF .information .results {
+
+    display: flex;
+    max-width: 254px;
+    justify-content: space-between;
+}
+
+.section .containerF .information .results .resultN {
+    max-width: 110px;
+    max-height: 37px;
+}
+
+
+.section .containerF .information .results .resultN .textf {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold;
+    font-family: "Zizou Slab";
+    margin-bottom: 5px;
+    color: var(--gray);
+}
+
+.section .containerF .information .results .resultN .resultn {
+    min-width: 110px;
+    min-height: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Zizou Slab";
+    color: var(--red);
+}
+
+.section .containerF .information .results .resultP {
+    min-width: 86px;
+    min-height: 37px;
+}
+
+.section .containerF .information .results .border {
+    border-left: 1px solid var(--gray);
+}
+
+
+
+.section .containerF .information .results .resultP .textf {
+    min-width: 86px;
+    min-height: 12px;
+    font-size: 12px;
+    line-height: 12px;
+    font-family: "Zizou Slab";
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--gray);
+}
+
+.section .containerF .information .results .resultP .resultp {
+    color: var(--red);
+    min-width: 86px;
+    min-height: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 12px;
+    font-family: "Zizou Slab";
+}
+
+.section .containerF .information .info {
+    min-width: 100%;
+    min-height: 32px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--gray);
+    font-family: "Zizou Slab";
+    margin-top: 25px;
+}
+
+.section .containerF .information .buttonF {
+    min-width: 100%;
+    min-height: 44px;
+    background-color: var(--red);
+    padding: 12px 10px;
+    color: var(--white);
+    font-family: "Zizou Slab";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 25px;
+}
+
+.section .containerF .information .buttonF .edge {
+    width: 100%;
+    min-height: 44px;
+    position: absolute;
+    border: 1px solid var(--red);
+    top: 4px;
+    left: 4px;
+}
+
+@media (min-width: 768px) {
+
+    .section .containerF {
+        max-height: 379px;
+        max-width: 500px;
+    }
+
+    .section .containerF .information .subtitle {
+        font-size: 36px;
+        line-height: 36px;
+        max-width: 400px;
+        max-height: 72px;
+        margin-bottom: 27px;
+        margin-top: 24px;
+    }
+
+    .section .containerF .information .buttonF {
+        margin-top: 0;
+    }
+
+    .section .containerF .information .results .resultN {
+        max-width: 182px;
+        max-height: 45px;
+    }
+
+    .section .containerF .information .results .resultP {
+        max-width: 122px;
+        max-height: 45px;
+    }
+
+    .section .containerF .information .results .resultN .textf {
+        font-size: 16px;
+        line-height: 16px;
+        max-width: 182px;
+    }
+
+    .section .containerF .information .results .resultN .resultn {
+        max-width: 182px;
+        max-height: 24px;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .section .containerF .information .results .resultP .textf {
+        max-width: 123px;
+        max-height: 16px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .section .containerF .information .results .resultP .resultp {
+        max-width: 123px;
+        min-height: 24px;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .section .containerF .information .info {
+        max-width: 400px;
+        max-height: 40px;
+        font-size: 20px;
+        line-height: 20px;
+        margin-top: 25px;
+    }
+}
