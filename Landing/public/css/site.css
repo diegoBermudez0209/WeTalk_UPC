@@ -1,0 +1,746 @@
+/* FONTS */
+@font-face {
+    font-family: "Public Sans";
+    src: url('../fonts/PublicSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Pixeloid Sans";
+    src: url('../fonts/PixeloidSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Zizou Slab";
+    src: url('../fonts/Zizou\ Slab-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: "upc_sgothic";
+    src: url('../fonts/upc_sgothic-bdcap-webfont.ttf') format('truetype');
+}
+
+/* COLORES */
+:root {
+    --red: #F00;
+    --white: #FFF;
+    --black: #000;
+    --sky: #E6F5F0;
+    --sky2: #9DE7D6;
+    --skyblue: #80b2ff;
+    --yellow: #FFDF00;
+    --blue: #0065FF;
+    --gray: #191919;
+    --lightgray: #D9D9D9;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    background-color: var(--red);
+    padding: 12px 10px;
+    font-family: "Zizou Slab";
+    font-weight: bold;
+    color: var(--white);
+    position: relative;
+}
+
+
+/** Section 1 **/
+
+.section1 {
+    background-image: url(../images/bgheromobile.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 375px;
+    min-height: 1356px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section1 .logo {
+    position: absolute;
+    top: 63px;
+    right: 0;
+}
+
+.section1 .content {
+    min-height: 1251px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section1 .content .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 .content .info .man {
+    min-width: 335px;
+    min-height: 271px;
+}
+
+.section1 .content .info .man img {
+    width: 100%;
+}
+
+.section1 .content .info .info-text {
+    background-color: var(--blue);
+    min-width: 335px;
+    min-height: 328px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.section1 .content .info .info-text .title {
+    font-family: "Pixeloid Sans";
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 38px;
+    color: var(--yellow);
+    min-width: 295px;
+    min-height: 152px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 .content .info .info-text .paragraph {
+    color: var(--white);
+    min-width: 295px;
+    min-height: 96px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.section1 .content .info .info-text .paragraph span {
+    color: var(--yellow);
+    font-weight: bold;
+}
+
+
+.formulario {
+    background-color: var(--white);
+    width: 90%;
+    opacity: 0.4;
+    min-height: 612px;
+    min-width: 324px;
+}
+
+.form {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+
+/** Section 2 **/
+
+.section2 {
+    background-image: url(../images/bg\ yellowmobile.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 335px;
+    min-height: 643px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.section2 .content {
+    min-height: 553px;
+    min-width: 335px;
+}
+
+.section2 .content .info {
+    min-height: 214px;
+    min-width: 276px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section2 .content .info .title {
+    text-transform: uppercase;
+    min-width: 275px;
+    min-height: 30px;
+    font-family: "Pixeloid Sans";
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.section2 .content .info .paragraph {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.section2 .content .info .paragraph .text {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.section2 .content .info .paragraph .text span {
+    font-weight: bold;
+}
+
+.section2 .content .info .button {
+    margin-top: 42px;
+    display: flex;
+    justify-content: center;
+    min-width: 276px;
+    min-height: 44px;
+    background-color: var(--red);
+    padding: 12px 10px;
+    font-family: "Zizou Slab";
+    font-weight: bold;
+    color: var(--white);
+    position: relative;
+}
+
+.section2 .content .info .button .edgeb {
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    border: 1px solid var(--red);
+    padding: 12px 10px;
+    min-width: 276px;
+    min-height: 44px;
+    width: 100%;
+}
+
+.section2 .content .girl {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 53px;
+
+}
+
+.section2 .content .girl img {
+    width: 100%;
+}
+
+/** Section 3 **/
+
+.section3 {
+    background-image: url(../images/Bggreenmobile.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 325px;
+    min-height: 906px;
+    width: 78%;
+    position: relative;
+    right: 5px;
+    margin: 0 auto;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.section3 .edge {
+    min-width: 330px;
+    min-height: 898px;
+    background-color: var(--lightgray);
+    position: absolute;
+    top: 15px;
+    right: -10;
+    width: 100%;
+    z-index: -1;
+}
+
+.section3 .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.section3 .content .info {
+    min-width: 295px;
+    min-height: 418px;
+    width: 80%;
+    margin-top: 40px;
+
+}
+
+.section3 .content .info .title {
+    min-width: 275px;
+    min-height: 60px;
+    font-family: "Pixeloid Sans";
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--yellow);
+    width: 100%;
+}
+
+.section3 .content .info .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+
+}
+
+.section3 .content .info .cards .card {
+    min-height: 70px;
+    min-width: 295px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.section3 .content .info .cards .card .number {
+    min-width: 70px;
+    min-height: 70px;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-family: "upc_sgothic";
+    font-size: 48px;
+    line-height: 64px;
+}
+
+.section3 .content .info .cards .card .text {
+    min-width: 225px;
+    min-height: 70px;
+    max-height: 70px;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    background-color: var(--white);
+    font-size: 16px;
+    line-height: 18px;
+    width: 100%;
+}
+
+.section3 .content .info .cards .card .textd {
+    min-width: 225px;
+    min-height: 70px;
+    max-height: 70px;
+    padding: 12px;
+    background-color: var(--white);
+    font-size: 16px;
+    line-height: 18px;
+    width: 100%;
+}
+
+
+.section3 .content .info .cards .card .textd span {
+    color: var(--red);
+}
+
+.section3 .content .info .button {
+    margin-top: 15px;
+    width: 80%;
+    min-width: 276px;
+    min-height: 44px;
+}
+
+.section3 .content .info .button .edgeb {
+    min-width: 276px;
+    min-height: 44px;
+    position: absolute;
+    top: 4;
+    left: 4;
+    border: 1px solid var(--red);
+    z-index: 1;
+    width: 100%;
+}
+
+.section3 .content .girl2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.section3 .content .girl2 img {
+    width: 100%;
+
+}
+
+/** footer **/
+
+.footer {
+    margin-top: 65px;
+    min-width: 377px;
+    min-height: 490px;
+    background-color: var(--gray);
+    width: 100%;
+}
+
+.footer .content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.footer .content .border {
+    width: 100%;
+    border-bottom: 1px solid var(--white);
+}
+
+.footer .content .info {
+    margin-top: 24px;
+}
+
+.footer .content .images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .images .wasc {
+    min-width: 166px;
+    min-height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.footer .images .reclamaciones {
+    margin-top: 24px;
+    min-width: 327px;
+    min-height: 78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.footer .content .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer .content .info .text {
+    color: var(--white);
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.footer .content .info .text span {
+    font-weight: bold;
+}
+
+.footer .content .slogan {
+    margin-top: 24px;
+    min-width: 329px;
+    min-height: 39px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+
+    /** Section1 **/
+    .section1 {
+        background-image: url(../images/Bgsky.png);
+        max-height: 645px;
+        min-height: 645px;
+        background-size: 100% 100%;
+    }
+
+    .section1 .logo {
+        top: 37px;
+    }
+
+    .section1 .content {
+        min-height: 1251px;
+        width: 1166px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section1 .content .info .man {
+        max-width: 468px;
+        max-height: 380px;
+        min-height: 380px;
+    }
+
+
+    .section1 .content .info .info-text {
+        background-color: var(--blue);
+        max-width: 519px;
+        max-height: 216px;
+        min-height: 216px;
+        gap: 10px;
+        position: relative;
+        bottom: 30px;
+    }
+
+    .section1 .content .info .info-text .title {
+        line-height: 44px;
+        font-size: 38px;
+        max-width: 459px;
+        min-height: 88px;
+    }
+
+    .section1 .content .info .info-text .paragraph {
+        min-width: 459px;
+        max-width: 459px;
+        min-height: 48px;
+        max-height: 48px;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+
+    .formulario {
+        background-color: var(--white);
+        width: 90%;
+        opacity: 0.4;
+        max-height: 483px;
+        min-height: 483px;
+        max-width: 519px;
+        margin-top: 53px;
+        min-width: 0;
+
+    }
+
+    /** Section2 **/
+
+    .section2 {
+        background-image: url(../images/bgyellow.png);
+        background-size: 100% 100%;
+        max-width: 1166px;
+        min-height: 400px;
+        max-height: 400px;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .section2 .content {
+        min-height: 400px;
+        max-height: 400px;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        width: 100%;
+    }
+
+    .section2 .content .info {
+        max-width: 470px;
+        margin: 0;
+    }
+
+
+
+    .section2 .content .info .paragraph {
+        margin-top: 15px;
+        max-width: 470px;
+        max-height: 76px;
+    }
+
+    .section2 .content .girl {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 380px;
+        min-height: 400px;
+    }
+
+    .section2 .content .girl img {
+        max-width: 102%;
+        min-height: 400px;
+    }
+
+    .section2 .content .info .button {
+        max-width: 276px;
+
+    }
+
+    /** Section3 **/
+
+    .section3 {
+        background-image: url(../images/Background.png);
+        background-size: 100% 100%;
+        max-width: 1176px;
+        max-height: 488px;
+        min-height: 488px;
+        width: 90%;
+        justify-content: flex-start;
+        align-items: normal;
+    }
+
+    .section3 .edge {
+        display: none;
+    }
+
+    .section3 .content {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        overflow: hidden;
+        align-items: center;
+        max-height: calc(488px - 10px);
+    }
+
+    .section3 .content .info {
+        max-width: 518px;
+        max-height: 388px;
+        min-height: 388px;
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+
+    .section3 .content .info .title {
+        max-width: 304px;
+        min-height: 30px;
+        max-height: 30px;
+    }
+
+    .section3 .content .info .cards .card {
+        min-height: 70px;
+        max-width: 518px;
+        width: 100%;
+    }
+
+    .section3 .content .info .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .section3 .content .info .cards .card .textd {
+        padding: 20px;
+    }
+
+    .section3 .content .info .button {
+        margin-top: 15px;
+        width: 50%;
+        min-height: 44px;
+    }
+
+    .section3 .content .girl2 {
+        width: 100%;
+        margin-top: 0;
+        min-width: 404.91px;
+        max-height: 524px;
+    }
+
+    .section3 .content .girl2 img {
+        width: 66%;
+        max-width: 416px;
+        min-width: 416px;
+        margin-top: 100px;
+    }
+
+    /** footer **/
+
+    .footer {
+        
+        max-height: 162px;
+        min-height: 162px;
+
+    }
+
+    .footer .content {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .footer .content .border {
+        display: none;
+    }
+
+    .footer .content .info {
+        
+        margin-left: 30px;
+    }
+    .footer .content .images {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 32px;
+        gap: 76px;
+        
+    }
+    .footer .images .wasc {
+        margin-top: 0;
+        max-width: 207.5px;
+        max-height: 40px;
+        min-height: 40px;
+    }
+    .footer .images .wasc img {
+        max-width: 207.5px;
+        max-height: 40px;
+        min-height: 40px;
+    }
+    .footer .content .slogan {
+        min-width: 148px;
+    }
+    .footer .images .reclamaciones {
+        min-width: 133px;
+        max-width: 133px;
+        min-height: 78px;
+    }
+    
+}

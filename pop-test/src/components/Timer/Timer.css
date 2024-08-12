@@ -1,0 +1,6 @@
+.cronometro { background-color: var(--white); padding: 10px; }
+.cronometro .content { position: relative; background-color: #F2F7FF; height: 10px; display: flex; align-items: center; justify-content: space-between; padding: 13px; color: var(--white); }
+.cronometro .content img { vertical-align: -webkit-baseline-middle; }
+.cronometro .content .progressbar { background-color: var(--blue); position: absolute; left: 0; width: 100%; height: 100%; }
+.cronometro .content .info-timer { z-index: 1; }
+.cronometro .content .info-timer:nth-child(1) {  padding: 2px; text-shadow: -1px 0 var(--blue), 0 1px var(--blue), 1px 0 var(--blue),0 -1px var(--blue); }
